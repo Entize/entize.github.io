@@ -122,11 +122,11 @@
       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
       <script>
         var gitment = new Gitment({
-          owner: 'fwjyttbtx',
-          repo: 'BlogComment',
+          owner: '{{ site.comments.gitment.owner }}',
+          repo: '{{ site.comments.gitment.repo }}',
           oauth: {
-            client_id: '78c81671a92c4f5e81e6',
-            client_secret: 'cf34fbb66adf8c393126ee854f230695fe8168b5',
+            client_id: '{{ site.comments.gitment.client_id }}',
+            client_secret: '{{ site.comments.gitment.client_secret }}',
           },
         })
       gitment.render('container')
