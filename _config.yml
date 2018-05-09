@@ -30,7 +30,9 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: true
+  # 评论功能的类型 disqus/livere livere需要添加ID disqus需要添加一个指定的URL
+  comment: 'livere'
+  livere_id: 'MTAyMC8zNjM1Ny8xMjg5Mg=='
   disqus_url: 'https://entize-1.disqus.com/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
