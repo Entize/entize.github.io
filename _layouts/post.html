@@ -116,6 +116,21 @@
       <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
       </div>
       <!-- City版安装代码已完成 -->
+      {% elsif site.comments.comment == 'gitment' %}
+      <div id="container"></div>
+      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+      <script>
+        var gitment = new Gitment({
+          owner: 'fwjyttbtx',
+          repo: 'https://github.com/fwjyttbtx/BlogComment.git',
+          oauth: {
+            client_id: '78c81671a92c4f5e81e6',
+            client_secret: 'cf34fbb66adf8c393126ee854f230695fe8168b5',
+          },
+        })
+      gitment.render('container')
+      </script>
       {% endif %}
     </section>
   </section>
